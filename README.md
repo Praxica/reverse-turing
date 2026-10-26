@@ -1,6 +1,8 @@
 # Reverse Turing Test
 
-A live, multiplayer Turing test. A judge questions two contestants — one human, one AI — and has to decide which is which from the words alone. Built as a research platform for studying how language models imitate people and how people (and models) detect them.
+Turing's test asked whether a machine could convince a human judge that it was human. Seventy-five years on, with the world filling up with machine-generated text trained on everything people have ever written, the question runs the other way: how would *you* convince anyone that you are human?
+
+This is that test, run in reverse, as a live multiplayer game. A judge questions two contestants — one human, one AI — and has to decide which is which from the words alone. The person is the one who has to pass. It is also a research platform for studying what people fall back on when their humanity is in doubt, how language models imitate them, and how judges, human or machine, tell the difference.
 
 ## How a game works
 

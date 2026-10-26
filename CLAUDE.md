@@ -2,7 +2,7 @@
 
 # Reverse Turing Test — notes for AI assistants
 
-A live Turing test game: a judge questions two contestants (one human, one AI) and names the human. See README.md for the full description.
+The Turing test in reverse: a judge questions two contestants (one human, one AI) and the human has to convince the judge they are the person. See README.md for the full description.
 
 ## Where things are
 

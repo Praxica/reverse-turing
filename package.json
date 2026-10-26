@@ -2,7 +2,7 @@
   "name": "reverse-turing",
   "version": "0.1.0",
   "private": true,
-  "description": "A live Turing test: a judge questions a human and an AI and has to tell which is which.",
+  "description": "The Turing test in reverse: a judge questions a human and an AI, and the human has to convince them they are the person.",
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
     "type": "git",

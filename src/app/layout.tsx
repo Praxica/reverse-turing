@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'Reverse Turing Test',
   description:
-    'Can a judge tell who is human and who is AI? Find out in a live conversation game.',
+    'The Turing test in reverse: a judge questions a human and an AI, and the human has to convince them they are the person.',
 };
 
 export default function RootLayout({

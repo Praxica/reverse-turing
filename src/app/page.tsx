@@ -34,11 +34,13 @@ export default async function HomePage() {
             One human. One AI. One judge.
           </p>
           <h1 className="mt-4 text-5xl font-semibold leading-[1.05] tracking-tighter sm:text-6xl">
-            Can you tell which one is human?
+            Could you convince anyone that you&rsquo;re human?
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            A judge questions two hidden participants and has to work out who
-            is the person and who is the machine — from the words alone.
+            Turing asked whether a machine could pass as a person. Now that
+            machines write like us, the test runs the other way. A judge
+            questions two hidden participants and has to tell the person from
+            the machine — from the words alone.
           </p>
           <div className="mt-10">
             {userId ? (
