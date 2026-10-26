@@ -1,0 +1,2 @@
+ALTER TABLE "Game" ADD COLUMN "showJudgeNotes" BOOLEAN NOT NULL DEFAULT false;
+ALTER TABLE "Game" ADD COLUMN "llmStrategy" TEXT;

@@ -1,0 +1,122 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ─── Enums ───────────────────────────────────────────────
+
+enum GameStatus {
+  LOBBY
+  READY
+  CONVERSATION
+  JUDGING
+  COMPLETED
+  CANCELLED
+}
+
+enum GameRole {
+  HUMAN_PLAYER
+  LLM_PLAYER
+  JUDGE
+}
+
+enum JudgeMode {
+  HUMAN
+  LLM
+}
+
+enum GameVerdict {
+  CORRECT
+  INCORRECT
+}
+
+// ─── Models ──────────────────────────────────────────────
+
+model User {
+  id          String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  email       String   @unique
+  externalId  String?  @unique // Clerk user ID
+  displayName String   @default("Anonymous")
+  createdAt   DateTime @default(now()) @db.Timestamptz(6)
+  updatedAt   DateTime @default(now()) @updatedAt @db.Timestamptz(6)
+
+  hostedGames      Game[]            @relation("GameHost")
+  gameParticipants GameParticipant[]
+}
+
+model Game {
+  id             String      @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  createdAt      DateTime    @default(now()) @db.Timestamptz(6)
+  updatedAt      DateTime    @default(now()) @updatedAt @db.Timestamptz(6)
+  hostUserId     String      @db.Uuid
+  topic          String      @default("") // Optional seed topic (hidden in UI for now)
+  systemPrompt   String?     // Custom system prompt for LLM participant
+  model          String      // LLM model identifier (e.g. "anthropic:claude-sonnet-4-20250514")
+  status         GameStatus  @default(LOBBY)
+  maxTurns       Int         @default(10)
+  streamingDelay Int         @default(30) // ms per character for simulated streaming
+  judgeMode      JudgeMode   @default(HUMAN)
+  judgeModel     String?     // Model ID when judgeMode = LLM
+  showJudgeNotes Boolean     @default(false) // Reveal the AI judge's case notes after each round
+  llmStrategy    String?     // The AI contestant's current self-written strategy
+  strategyLocked Boolean     @default(false) // Keep llmStrategy fixed for the whole game (evolution runs)
+  judgeStrategy  String?     // The AI judge's self-written strategy for this session
+  rematchGameId  String?     @db.Uuid // The follow-up game started from this one's results screen
+  // Simulation / research fields
+  humanModel     String?     // When set, the human seat is played by this model (simulated human)
+  humanPersona   String?     // Persona text the simulated human plays
+  population     String?     // Who the human was: "kid", "adult", "simulated:<persona id>", ...
+  harnessRunId   String?     // Groups games created by one harness run
+  labelMapping   Json?       // { "A": "HUMAN_PLAYER", "B": "LLM_PLAYER" } or vice versa
+  currentTurn    Int         @default(0)
+  activePlayer   GameRole?   // Whose turn it is (HUMAN_PLAYER or LLM_PLAYER)
+  verdict        GameVerdict?
+  verdictReason  String?
+  completedAt    DateTime?   @db.Timestamptz(6)
+
+  host         User              @relation("GameHost", fields: [hostUserId], references: [id], onDelete: Cascade)
+  participants GameParticipant[]
+  messages     GameMessage[]
+
+  @@index([hostUserId])
+  @@index([status])
+}
+
+model GameParticipant {
+  id          String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  gameId      String    @db.Uuid
+  role        GameRole
+  token       String    @unique @default(dbgenerated("gen_random_uuid()"))
+  userId      String?   @db.Uuid // Optional: if participant is logged in
+  displayName String    @default("Anonymous")
+  isConnected Boolean   @default(false)
+  joinedAt    DateTime? @db.Timestamptz(6)
+
+  game Game  @relation(fields: [gameId], references: [id], onDelete: Cascade)
+  user User? @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([gameId])
+  @@index([token])
+}
+
+model GameMessage {
+  id          String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  gameId      String    @db.Uuid
+  senderRole  GameRole  // JUDGE (question), HUMAN_PLAYER or LLM_PLAYER (answer)
+  content     String
+  turnNumber  Int       // Question round this message belongs to
+  privateNotes String?  // JUDGE: the AI judge's case notes. LLM_PLAYER: the strategy it answered under
+  createdAt   DateTime  @default(now()) @db.Timestamptz(6)
+  deliveredAt DateTime? @db.Timestamptz(6) // When simulated streaming completed
+
+  game Game @relation(fields: [gameId], references: [id], onDelete: Cascade)
+
+  // One question and one answer per role per round (guards double submits)
+  @@unique([gameId, senderRole, turnNumber])
+  @@index([gameId])
+  @@index([gameId, turnNumber])
+}

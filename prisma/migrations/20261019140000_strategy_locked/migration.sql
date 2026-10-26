@@ -1,0 +1,1 @@
+ALTER TABLE "Game" ADD COLUMN "strategyLocked" BOOLEAN NOT NULL DEFAULT false;
