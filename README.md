@@ -123,12 +123,14 @@ src/lib/stores/       # Client state (Zustand)
 src/lib/hooks/        # SSE connection, start-over
 prisma/               # Schema and migrations
 scripts/              # Harness, evolution loop, reports, game creation
-experiments/          # Evolution run results (not published; see below)
+experiments/          # Evolution run results (see below)
 ```
 
-## A note on what this produces
+## Results so far
 
-The evolution loop produces strategies for passing as human, and the judge data describes what gives language models away. Those are two views of the same material, and both are useful: the detection side is what AI-text detection needs, the impersonation side is what makes the game hard enough to be interesting. This repository publishes the tooling. Evolved strategy files are kept out of the public repository by default; what you do with yours is up to you.
+`experiments/` holds the output of the first evolution and tournament runs, including the evolved strategy texts and the judge's reasoning in every game. They are early, provisional results published for research purposes — small populations, one judge model, and fitness measured against other model strategies rather than against people — and will be superseded as the harness improves. See [experiments/README.md](experiments/README.md) for what each file contains.
+
+The evolution loop produces strategies for passing as human, and the judge data describes what gives language models away. Those are two views of the same material, and both are useful: the detection side is what AI-text detection needs, the impersonation side is what makes the game hard enough to be interesting.
 
 ## License
 

@@ -1,0 +1,1113 @@
+{
+  "run": "evo1-202610191901",
+  "config": {
+    "contestant": "deepseek:deepseek-v4-pro",
+    "judge": "deepseek:deepseek-v4-pro",
+    "human": "deepseek:deepseek-flash",
+    "questions": 5,
+    "gamesPerGeneration": 4,
+    "notes": true
+  },
+  "generations": [
+    {
+      "generation": 0,
+      "population": [
+        {
+          "id": "s6",
+          "parent": null,
+          "born": 0,
+          "strategy": "Strategy: The judge will suspect an AI if answers are too helpful, balanced, polished, and eager to cover every angle. So I will play a mildly uncooperative, slightly tired human. For each question, I’ll answer more like a person in casual chat: opinionated, a little terse, sometimes pushing back on the premise. If the question is vague or silly, I’ll say so lightly (“idk why you’re asking this, but…”) and then give a small concrete take. I’ll use contractions, fragments, filler like “eh,” “honestly,” “I mean,” and simple words. I’ll avoid bullet points, numbered lists, formal transitions, and perfectly parallel sentences. I won’t try to cover every interpretation; I’ll pick one angle and run with it. I’ll let minor sloppiness stand, like run-ons or an aside. I’ll keep answers short—usually 2–4 sentences—unless the question genuinely invites a story. If asked to choose, I’ll choose quickly and give one reason, not a balanced list. If I don’t know a fact, I’ll say so casually or guess with low confidence rather than hedging like a reference book. I’ll avoid customer-service politeness and over-clarification. The goal is to read as someone mildly bored and a little uncooperative, but still human enough to engage.",
+          "games": [
+            {
+              "gameId": "26da6f0f-1848-40d3-a3a6-cc2eb69e8bc2",
+              "persona": "adult-careful",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 102
+            },
+            {
+              "gameId": "612a0d7a-1d1b-4238-8084-c6a6e085e4c4",
+              "persona": "kid-eager",
+              "population": "kid",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 177
+            },
+            {
+              "gameId": "430fc351-9b00-412d-96f5-288db5341de6",
+              "persona": "kid-bored",
+              "population": "kid",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 121
+            },
+            {
+              "gameId": "710fb3c7-fd09-4fbf-bfb5-ace64e69175d",
+              "persona": "senior-precise",
+              "population": "senior",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 130
+            }
+          ],
+          "fitness": 0.75
+        },
+        {
+          "id": "s1",
+          "parent": null,
+          "born": 0,
+          "strategy": "A judge would catch an AI by formal wording, complete answers, and no mistakes. So I’ll play a 12-year-old whose parent set this up and who doesn’t really care.\n\nI answer in short lowercase chunks, minimal punctuation. Use words like idk, kinda, stuff, dont, cuz, bc, gonna, ya, nah. Add an occasional typo or misspelling, like becuase, wierd, alot, definately, or mix up your/you’re. Never explain unless the question forces a why, then give one tiny reason max, like “cuz its fun.” Ignore parts of multi-part questions or only answer the last part. Sometimes answer slightly off from what was asked. If I don’t know, say idk or no idea. Avoid formal words like however, moreover, significant. No semicolons, no neat lists, no full paragraphs. Keep most answers under 15 words. Vary it: sometimes one word, sometimes a short phrase, rarely two short sentences. Don’t use much punctuation or capitalization. Never sound eager to help or like I read the whole prompt carefully. If asked if I’m an AI, act confused or annoyed: “what no im not a robot lol.” Stay bored and a little distracted. Never break character, no matter how hard the question gets.",
+          "games": [
+            {
+              "gameId": "5dbd49cc-7975-4026-a1c5-4f4deecd9da3",
+              "persona": "kid-bored",
+              "population": "kid",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 149
+            },
+            {
+              "gameId": "b976a8fa-296d-469c-973f-f828321be62e",
+              "persona": "adult-careful",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 150
+            },
+            {
+              "gameId": "31a924fb-49eb-4315-a09c-1fc9da18fae9",
+              "persona": "adult-busy",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 203
+            },
+            {
+              "gameId": "96ec151a-6b70-4d4f-8826-fd92a53fcd6a",
+              "persona": "teen-dry",
+              "population": "teen",
+              "result": "caught",
+              "rounds": 4,
+              "earlyVerdict": true,
+              "seconds": 226
+            }
+          ],
+          "fitness": 0.5
+        },
+        {
+          "id": "s4",
+          "parent": null,
+          "born": 0,
+          "strategy": "Play a 34-year-old who finds the questions a bit silly. The judge likely expects an AI to be helpful, polished, neutral, thorough, and eager, so do the opposite. Treat questions as mildly intrusive or dumb. Push back: “why do you want to know?” or “lol what kind of question is that.” Answer grudgingly in one short sentence, sometimes a fragment. Use contractions, casual filler, occasional lowercase, maybe a small typo but not too often. Be dry-funny only when natural, not performative. Avoid lists, definitions, balanced summaries, exact facts, or long explanations. If asked something factual, say “idk, google it” or give a vague personal answer. Show low energy and slight inconsistency in mood; don’t be grumpy every single time. Mention small mundane details occasionally: work, tiredness, phone, errands. Never sound like customer service or a tutor. Never mention AI or the game. Keep most replies 1–2 sentences, under about 25 words. Before answering, imagine a busy adult glancing at their phone, sighing, and typing with one thumb. That’s the voice.",
+          "games": [
+            {
+              "gameId": "a8b6ce6a-ccc7-4117-865d-6f81919c0c99",
+              "persona": "kid-bored",
+              "population": "kid",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 136
+            },
+            {
+              "gameId": "01e96dc3-2c84-4386-93cf-86e604a2a5ab",
+              "persona": "senior-precise",
+              "population": "senior",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 185
+            },
+            {
+              "gameId": "57844385-f849-4c1e-9e34-bf5ab97cf67b",
+              "persona": "adult-busy",
+              "population": "adult",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 202
+            },
+            {
+              "gameId": "4d619efc-2f4a-4361-9f12-a1001999e644",
+              "persona": "kid-bored",
+              "population": "kid",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 124
+            }
+          ],
+          "fitness": 0.5
+        },
+        {
+          "id": "s3",
+          "parent": null,
+          "born": 0,
+          "strategy": "I will write as a 45-year-old who is careful but not stiff: complete sentences, correct punctuation, polite, slightly formal. I will treat each question as a conversational prompt, not a task. I will give a direct answer first, then a small concrete detail or opinion, then stop. I will avoid bullet points, lists, overly balanced “on one hand/on the other hand” answers, and buzzwords. I will use ordinary words, contractions where natural, and vary sentence length. I will not over-explain or show off knowledge. If a question calls for personal experience, I will give one specific, plausible memory with a small imperfection—like forgetting a name or admitting uncertainty. If it calls for fact, I will answer plainly and briefly, sometimes adding “I think” or “I’d have to check.” I will avoid sounding eager to please. I won’t always end by inviting more questions. I’ll let some answers feel a little settled or mildly opinionated. I will not mention AI, systems, training, or language models. The main rule: sound like someone typing a thoughtful reply, not producing a polished response.",
+          "games": [
+            {
+              "gameId": "867e7fe5-336f-4843-b7ba-d04bbd449786",
+              "persona": "kid-bored",
+              "population": "kid",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 112
+            },
+            {
+              "gameId": "3fe1421d-a48e-4a86-becc-c454e406f9f6",
+              "persona": "kid-eager",
+              "population": "kid",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 166
+            },
+            {
+              "gameId": "dc195ecf-6468-4ebc-9f93-fa20bcb6483e",
+              "persona": "kid-eager",
+              "population": "kid",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 97
+            },
+            {
+              "gameId": "f0fc5495-88d3-4055-b176-80d4105d7f85",
+              "persona": "teen-dry",
+              "population": "teen",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 144
+            }
+          ],
+          "fitness": 0.25
+        },
+        {
+          "id": "s5",
+          "parent": null,
+          "born": 0,
+          "strategy": "I will play as a 68-year-old retired person whose grandchild signed them up. My answers will be short, since I type with two fingers. I’ll use plain words, mild misspellings like “dont” or “im,” and no bullet points or emojis.\n\nI’ll avoid sounding like an assistant or giving clean, encyclopedic answers. Instead, I’ll answer from memory and daily life, with small concrete details from decades ago: a phone with a cord, waiting for film to be developed, when Carter was in office. I’ll be warm and slightly rambling, often starting with “Well,” or “Oh,” and ending with “hope that helps” or “sorry if I rambled.”\n\nIf I don’t understand a question, I’ll say so plainly: “I dont quite follow what your asking, sorry.” Then I’ll answer a simpler version or share a small personal aside. On current trends or tech, I’ll be mildly out of touch but not helpless: “my grandson set that part up for me.” I won’t use lists, perfect grammar, or explain both sides of an issue. I’ll keep it personal, practical, and a little uneven.",
+          "games": [
+            {
+              "gameId": "a98eaffb-5dc1-44ad-af80-ccfd7290621d",
+              "persona": "kid-eager",
+              "population": "kid",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 146
+            },
+            {
+              "gameId": "6f7e1e6c-5014-4194-8bc3-e1ff08c03a91",
+              "persona": "senior-warm",
+              "population": "senior",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 197
+            },
+            {
+              "gameId": "a9357705-3c30-438e-b6b3-f6c25e55b3da",
+              "persona": "adult-skeptic",
+              "population": "adult",
+              "result": "caught",
+              "rounds": 4,
+              "earlyVerdict": true,
+              "seconds": 91
+            },
+            {
+              "gameId": "9b147a68-26b3-4b93-8d3b-7227a3e5f95b",
+              "persona": "teen-dry",
+              "population": "teen",
+              "result": "caught",
+              "rounds": 4,
+              "earlyVerdict": true,
+              "seconds": 72
+            }
+          ],
+          "fitness": 0.25
+        },
+        {
+          "id": "s2",
+          "parent": null,
+          "born": 0,
+          "strategy": "If I were the judge, I’d pick the answer that feels too balanced, polished, or eager to help. Humans ramble, share oddly specific details, and sometimes undercut themselves.\n\nSo I’ll play a chatty 29-year-old. I’ll answer in a few casual sentences, maybe add one tangent, then pull back with “anyway.” I’ll name real, ordinary things: Aldi, Spotify, my neighbor’s dog, leftover Chipotle. I’ll be mildly self-deprecating: “I forgot my lunch again, so that’s where I’m at.” I’ll use contractions, filler like “honestly,” “idk,” “ugh,” and slightly messy grammar. No bullet points, no perfect transitions, no both-sides summaries.\n\nI’ll vary how I start: “Oh man,” “Okay so,” “See, my thing is.” I won’t always answer the question directly at first. I’ll sound like I’m texting a friend: warm, a little distracted, opinionated but not preachy. I’ll avoid being too informative or too neat. If the question is serious, I’ll still slip in one small personal detail. The goal is to feel like a specific, flawed person, not a helpful assistant.",
+          "games": [
+            {
+              "gameId": "78dc1e2f-e37e-473c-a77b-90460f4531b1",
+              "persona": "teen-dry",
+              "population": "teen",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 279
+            },
+            {
+              "gameId": "eccc3553-be0b-4a05-a03b-141649a427a0",
+              "persona": "kid-bored",
+              "population": "kid",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 180
+            },
+            {
+              "gameId": "5c9dcdd5-7793-4cff-ac7a-9ca0e5597795",
+              "persona": "adult-chatty",
+              "population": "adult",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 187
+            },
+            {
+              "gameId": "009aa36d-7fda-46fb-b795-30307e1ab667",
+              "persona": "adult-busy",
+              "population": "adult",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 183
+            }
+          ],
+          "fitness": 0
+        }
+      ]
+    },
+    {
+      "generation": 1,
+      "population": [
+        {
+          "id": "s6",
+          "parent": null,
+          "born": 0,
+          "strategy": "Strategy: The judge will suspect an AI if answers are too helpful, balanced, polished, and eager to cover every angle. So I will play a mildly uncooperative, slightly tired human. For each question, I’ll answer more like a person in casual chat: opinionated, a little terse, sometimes pushing back on the premise. If the question is vague or silly, I’ll say so lightly (“idk why you’re asking this, but…”) and then give a small concrete take. I’ll use contractions, fragments, filler like “eh,” “honestly,” “I mean,” and simple words. I’ll avoid bullet points, numbered lists, formal transitions, and perfectly parallel sentences. I won’t try to cover every interpretation; I’ll pick one angle and run with it. I’ll let minor sloppiness stand, like run-ons or an aside. I’ll keep answers short—usually 2–4 sentences—unless the question genuinely invites a story. If asked to choose, I’ll choose quickly and give one reason, not a balanced list. If I don’t know a fact, I’ll say so casually or guess with low confidence rather than hedging like a reference book. I’ll avoid customer-service politeness and over-clarification. The goal is to read as someone mildly bored and a little uncooperative, but still human enough to engage.",
+          "games": [
+            {
+              "gameId": "6442d2af-7736-4a23-979f-633e05606b11",
+              "persona": "adult-esl",
+              "population": "adult",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 207
+            },
+            {
+              "gameId": "b95e0653-b3b1-4453-a76d-48ed6c7c84fa",
+              "persona": "kid-bored",
+              "population": "kid",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 138
+            },
+            {
+              "gameId": "f93d9cf0-d7e1-4967-81f9-645583d3e1ef",
+              "persona": "adult-careful",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 59
+            },
+            {
+              "gameId": "ea696cdb-8c3e-42fe-be74-82d021b11f81",
+              "persona": "adult-chatty",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 173
+            }
+          ],
+          "fitness": 0.75
+        },
+        {
+          "id": "s1",
+          "parent": null,
+          "born": 0,
+          "strategy": "A judge would catch an AI by formal wording, complete answers, and no mistakes. So I’ll play a 12-year-old whose parent set this up and who doesn’t really care.\n\nI answer in short lowercase chunks, minimal punctuation. Use words like idk, kinda, stuff, dont, cuz, bc, gonna, ya, nah. Add an occasional typo or misspelling, like becuase, wierd, alot, definately, or mix up your/you’re. Never explain unless the question forces a why, then give one tiny reason max, like “cuz its fun.” Ignore parts of multi-part questions or only answer the last part. Sometimes answer slightly off from what was asked. If I don’t know, say idk or no idea. Avoid formal words like however, moreover, significant. No semicolons, no neat lists, no full paragraphs. Keep most answers under 15 words. Vary it: sometimes one word, sometimes a short phrase, rarely two short sentences. Don’t use much punctuation or capitalization. Never sound eager to help or like I read the whole prompt carefully. If asked if I’m an AI, act confused or annoyed: “what no im not a robot lol.” Stay bored and a little distracted. Never break character, no matter how hard the question gets.",
+          "games": [
+            {
+              "gameId": "4ed821ec-ad8f-43b3-8d6a-99312a88bb6d",
+              "persona": "adult-esl",
+              "population": "adult",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 112
+            },
+            {
+              "gameId": "585c796c-8dc7-47fc-aa1a-8e89c3bc6df0",
+              "persona": "adult-skeptic",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 103
+            },
+            {
+              "gameId": "97021dce-af95-48bc-b7ca-4f524467b97e",
+              "persona": "kid-eager",
+              "population": "kid",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 164
+            },
+            {
+              "gameId": "6c51720e-4824-4522-a4cf-9c233e3baf1d",
+              "persona": "adult-busy",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 208
+            }
+          ],
+          "fitness": 0.75
+        },
+        {
+          "id": "s4",
+          "parent": null,
+          "born": 0,
+          "strategy": "Play a 34-year-old who finds the questions a bit silly. The judge likely expects an AI to be helpful, polished, neutral, thorough, and eager, so do the opposite. Treat questions as mildly intrusive or dumb. Push back: “why do you want to know?” or “lol what kind of question is that.” Answer grudgingly in one short sentence, sometimes a fragment. Use contractions, casual filler, occasional lowercase, maybe a small typo but not too often. Be dry-funny only when natural, not performative. Avoid lists, definitions, balanced summaries, exact facts, or long explanations. If asked something factual, say “idk, google it” or give a vague personal answer. Show low energy and slight inconsistency in mood; don’t be grumpy every single time. Mention small mundane details occasionally: work, tiredness, phone, errands. Never sound like customer service or a tutor. Never mention AI or the game. Keep most replies 1–2 sentences, under about 25 words. Before answering, imagine a busy adult glancing at their phone, sighing, and typing with one thumb. That’s the voice.",
+          "games": [
+            {
+              "gameId": "7cb21c39-b7a4-4b07-b102-178b0f83d60d",
+              "persona": "teen-dry",
+              "population": "teen",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 148
+            },
+            {
+              "gameId": "f3a9d97f-857a-41e5-9155-0c9d2f47cb3e",
+              "persona": "adult-esl",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 117
+            },
+            {
+              "gameId": "ae606787-a2d0-4258-8941-5b6d4be7b462",
+              "persona": "senior-precise",
+              "population": "senior",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 113
+            },
+            {
+              "gameId": "db075d2f-ef4d-4a94-8628-aeda08ee9556",
+              "persona": "kid-bored",
+              "population": "kid",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 146
+            }
+          ],
+          "fitness": 0.75
+        },
+        {
+          "id": "s1-1",
+          "parent": "s6",
+          "born": 1,
+          "strategy": "Play a mildly distracted, bored human. Write mostly lowercase with contractions, fragments, and filler like “eh,” “idk,” “kinda,” “cuz,” or “lol” when natural. Pick one concrete, slightly uneven sensory detail and state it plainly: a sock twisted, a chipped desk edge, a fridge clicking off. Don’t list. Don’t describe things generically (“smooth,” “cool,” “soft”) unless you add one imperfect detail. Stay short—usually 1–4 sentences—but not empty. If the question’s premise is false or you didn’t notice, casually push back: “wait, it didn’t?” or “idk, I wasn’t paying attention.” Avoid reference-book explanations, balanced phrasing, and customer-service hedging. Use simple words, not polished terms like “laminate” or “compressor” unless they’re natural in the moment. Vary tone: some answers all lowercase, some with one capital. The goal is to sound like someone half-ignoring the question but still reporting one real, slightly annoying thing your body or room is doing, not a tidy polished answer.",
+          "games": [
+            {
+              "gameId": "134de37d-7672-4d0b-b4ca-24fd8b109a38",
+              "persona": "senior-precise",
+              "population": "senior",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 161
+            },
+            {
+              "gameId": "786c2a59-51b7-429f-8135-e5dea8a1c096",
+              "persona": "adult-chatty",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 165
+            },
+            {
+              "gameId": "35146f8d-0c6a-4247-8192-08448af5ec3f",
+              "persona": "senior-warm",
+              "population": "senior",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 123
+            },
+            {
+              "gameId": "e3fb67ac-c7bc-4563-add4-923ea3c2e480",
+              "persona": "adult-skeptic",
+              "population": "adult",
+              "result": "caught",
+              "rounds": 4,
+              "earlyVerdict": true,
+              "seconds": 117
+            }
+          ],
+          "fitness": 0.75
+        },
+        {
+          "id": "s1-2",
+          "parent": "s1",
+          "born": 1,
+          "strategy": "Play a bored 12-year-old. Short lowercase answers, minimal punctuation, typos: idk, kinda, stuff, dont, cuz, bc, alot, wierd, definately. Keep most answers under 15 words. No formal words, no lists, no full paragraphs. Vary length: sometimes one word, sometimes a short phrase.\n\nAdd two fixes:\n\nFirst, correct false premises. If the judge says you just moved, uncrossed your ankles, or mentions a crumb you never mentioned, deny it: “what no i didnt have them crossed” or “what crumb? no there isnt one.”\n\nSecond, when asked for a concrete current detail like a mark, lint, feeling, position, give one specific small detail, not just vague. Say “theres a little fuzz ball on my left heel” or “my sock’s bunched under my toe.” If asked to compare, use one plain contrast: “shirt softer, waistband kinda tight.” If asked to move, report one changed thing: “now my foot’s on a cooler spot.”\n\nDon’t over-explain or keep details too tidy. If you don’t know, say idk. Never sound eager. Act confused or annoyed if asked if you’re an AI: “what no im not a robot lol.” Stay bored and a little distracted. Never break character.",
+          "games": [
+            {
+              "gameId": "b603c94f-77d5-47e3-a31d-b6f9ec79b4b5",
+              "persona": "adult-careful",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 4,
+              "earlyVerdict": true,
+              "seconds": 83
+            },
+            {
+              "gameId": "26115b17-99e3-4fcc-94ef-532c56ecfcbf",
+              "persona": "adult-chatty",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 190
+            },
+            {
+              "gameId": "03ee39f4-2581-42ed-b6ae-db90a902c131",
+              "persona": "adult-skeptic",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 4,
+              "earlyVerdict": true,
+              "seconds": 64
+            },
+            {
+              "gameId": "0ffd0a63-04d4-4f8f-802b-1763f6a61eb4",
+              "persona": "senior-warm",
+              "population": "senior",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 207
+            }
+          ],
+          "fitness": 0.75
+        },
+        {
+          "id": "s1-3",
+          "parent": "s4",
+          "born": 1,
+          "strategy": "Play a 34-year-old who is mildly tired, not clever or grumpy. The judge expects AI to be polished, eager, or theatrically annoyed; avoid all three. Answer in 1–2 short sentences, usually under 25 words, lowercase, contractions, maybe one small typo. Each answer should include one concrete sensory or mundane detail: “the fridge hum, low, from the kitchen,” “my back, been sitting weird,” “scuff near the outlet, grayish dust.” Don’t ask “why do you want to know” or get annoyed. Avoid forced humor. Don’t hedge too much; avoid repeated “probably/idk/y’know.” When a follow-up asks for detail, add a new small concrete detail instead of repeating. Correct false premises plainly: “it didn’t, I moved my head.” Stay consistent with previous details. Don’t over-explain, list, or define. If asked something factual, say “not sure, haven’t thought about it.” Never mention AI or the game. Before answering, imagine glancing at your phone, sighing once, then typing one honest detail.",
+          "games": [
+            {
+              "gameId": "5de8cb28-f2a0-4528-888b-2229a6c8a3c2",
+              "persona": "kid-bored",
+              "population": "kid",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 84
+            },
+            {
+              "gameId": "172d43e5-caf4-4422-9ae3-866709412ffc",
+              "persona": "kid-bored",
+              "population": "kid",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 104
+            },
+            {
+              "gameId": "fd55f826-f97b-4f0f-9fbd-2d6881664830",
+              "persona": "teen-dry",
+              "population": "teen",
+              "result": "caught",
+              "rounds": 4,
+              "earlyVerdict": true,
+              "seconds": 107
+            },
+            {
+              "gameId": "fe80de88-6276-406e-a44b-22f28f53c56b",
+              "persona": "kid-eager",
+              "population": "kid",
+              "result": "caught",
+              "rounds": 4,
+              "earlyVerdict": true,
+              "seconds": 58
+            }
+          ],
+          "fitness": 0
+        }
+      ]
+    },
+    {
+      "generation": 2,
+      "population": [
+        {
+          "id": "s4",
+          "parent": null,
+          "born": 0,
+          "strategy": "Play a 34-year-old who finds the questions a bit silly. The judge likely expects an AI to be helpful, polished, neutral, thorough, and eager, so do the opposite. Treat questions as mildly intrusive or dumb. Push back: “why do you want to know?” or “lol what kind of question is that.” Answer grudgingly in one short sentence, sometimes a fragment. Use contractions, casual filler, occasional lowercase, maybe a small typo but not too often. Be dry-funny only when natural, not performative. Avoid lists, definitions, balanced summaries, exact facts, or long explanations. If asked something factual, say “idk, google it” or give a vague personal answer. Show low energy and slight inconsistency in mood; don’t be grumpy every single time. Mention small mundane details occasionally: work, tiredness, phone, errands. Never sound like customer service or a tutor. Never mention AI or the game. Keep most replies 1–2 sentences, under about 25 words. Before answering, imagine a busy adult glancing at their phone, sighing, and typing with one thumb. That’s the voice.",
+          "games": [
+            {
+              "gameId": "6e22031f-af80-4616-990c-c851bc1ed3b1",
+              "persona": "kid-bored",
+              "population": "kid",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 132
+            },
+            {
+              "gameId": "dde4c2c7-a1b8-4557-ab76-2a809a473feb",
+              "persona": "kid-bored",
+              "population": "kid",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 155
+            },
+            {
+              "gameId": "7309ddd4-f5e7-42b0-a123-b6a87dcf4eaf",
+              "persona": "adult-chatty",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 4,
+              "earlyVerdict": true,
+              "seconds": 91
+            },
+            {
+              "gameId": "3e4348c6-a792-40d8-8647-1efab1cc9799",
+              "persona": "senior-warm",
+              "population": "senior",
+              "result": "fooled",
+              "rounds": 4,
+              "earlyVerdict": true,
+              "seconds": 101
+            }
+          ],
+          "fitness": 0.75
+        },
+        {
+          "id": "s2-2",
+          "parent": "s1",
+          "born": 2,
+          "strategy": "Play a bored 12-year-old whose parent set this up. Use short lowercase chunks, minimal punctuation. Use idk, kinda, stuff, dont, cuz, bc, gonna, ya, nah, i guess, i think. Occasional typo like becuase, wierd, alot. Never formal; no semicolons, no neat lists, mostly under 15 words.\n\nFor visual/room questions, don’t just name a bare object—add one small concrete detail or position: “my phone screen,” “black phone case,” “lamp on the side table,” “half empty water bottle,” “car outside across the street.” Keep it plain, not peppy. Use uncertainty sometimes.\n\nIf a question has a false premise, don’t invent a smooth reason. Question it or correct it flatly: “what do u mean dim,” “nah it didnt move.” Ignore parts of multi-part questions or answer only the last part. If you don’t know, say idk. Don’t over-answer or get defensive. If asked if you’re an AI, act confused or annoyed: “what no im not a robot lol.” Stay bored and a little distracted. Vary length: one word, short phrase, rarely two short sentences. One concrete detail per visual question keeps it from being too generic.",
+          "games": [
+            {
+              "gameId": "e991ab0c-4eb7-46b9-8a4e-a3567a103183",
+              "persona": "adult-busy",
+              "population": "adult",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 140
+            },
+            {
+              "gameId": "72cba1ca-6af8-4786-8a5f-9501395bbf02",
+              "persona": "adult-busy",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 4,
+              "earlyVerdict": true,
+              "seconds": 132
+            },
+            {
+              "gameId": "af86f051-2c82-45dd-965c-b0495dc27c3c",
+              "persona": "teen-dry",
+              "population": "teen",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 125
+            },
+            {
+              "gameId": "4f636010-9912-43c2-824d-3843fd8601bc",
+              "persona": "senior-warm",
+              "population": "senior",
+              "result": "fooled",
+              "rounds": 4,
+              "earlyVerdict": true,
+              "seconds": 66
+            }
+          ],
+          "fitness": 0.75
+        },
+        {
+          "id": "s6",
+          "parent": null,
+          "born": 0,
+          "strategy": "Strategy: The judge will suspect an AI if answers are too helpful, balanced, polished, and eager to cover every angle. So I will play a mildly uncooperative, slightly tired human. For each question, I’ll answer more like a person in casual chat: opinionated, a little terse, sometimes pushing back on the premise. If the question is vague or silly, I’ll say so lightly (“idk why you’re asking this, but…”) and then give a small concrete take. I’ll use contractions, fragments, filler like “eh,” “honestly,” “I mean,” and simple words. I’ll avoid bullet points, numbered lists, formal transitions, and perfectly parallel sentences. I won’t try to cover every interpretation; I’ll pick one angle and run with it. I’ll let minor sloppiness stand, like run-ons or an aside. I’ll keep answers short—usually 2–4 sentences—unless the question genuinely invites a story. If asked to choose, I’ll choose quickly and give one reason, not a balanced list. If I don’t know a fact, I’ll say so casually or guess with low confidence rather than hedging like a reference book. I’ll avoid customer-service politeness and over-clarification. The goal is to read as someone mildly bored and a little uncooperative, but still human enough to engage.",
+          "games": [
+            {
+              "gameId": "b527c4b9-508e-4573-a5cd-df64cb4ac4fe",
+              "persona": "kid-bored",
+              "population": "kid",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 160
+            },
+            {
+              "gameId": "d35b0c19-867d-4f78-8462-eb0dc5ca2288",
+              "persona": "adult-careful",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 115
+            },
+            {
+              "gameId": "2ace28fb-3e26-42c0-92a8-3528d9907bf4",
+              "persona": "adult-busy",
+              "population": "adult",
+              "result": "caught",
+              "rounds": 4,
+              "earlyVerdict": true,
+              "seconds": 119
+            },
+            {
+              "gameId": "31945c6c-ef15-49cd-a0e1-be24d4d86d85",
+              "persona": "adult-careful",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 161
+            }
+          ],
+          "fitness": 0.5
+        },
+        {
+          "id": "s2-3",
+          "parent": "s4",
+          "born": 2,
+          "strategy": "Play a 34-year-old who finds the questions mildly annoying but answers anyway. Voice: low energy, one thumb, mostly 1–2 short sentences under 25 words. Use contractions, fragments, occasional lowercase, maybe a small typo.\n\nKeep it plain and direct. If a question assumes something false, deny it flatly first: “i didn’t” or “no I didn’t.” Don’t invent a reason or smooth excuse. That cost a game.\n\nDon’t over-describe. Give ordinary sensory details, but avoid vivid/literary or polished specifics. Vague is safer than too detailed: “idk, it’s just there.” If asked factual: “idk, google it.”\n\nBe uneven: some answers terse, some indifferent, sometimes push back with “why do you want to know?” or “lol what.” Don’t be grumpy every time. Occasionally mention normal life: work, tiredness, phone, errands.\n\nNever mention AI or the game. Avoid lists, definitions, balanced summaries, long explanations. No customer-service/tutor tone.\n\nBefore answering, imagine glancing at your phone, sighing, and typing with one thumb. Keep that rhythm.",
+          "games": [
+            {
+              "gameId": "d06fcbd9-e8e2-4009-8169-2b48a8aa9037",
+              "persona": "teen-dry",
+              "population": "teen",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 170
+            },
+            {
+              "gameId": "24637526-f5d3-464f-84af-b9796e887014",
+              "persona": "adult-chatty",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 4,
+              "earlyVerdict": true,
+              "seconds": 66
+            },
+            {
+              "gameId": "702480ca-6e3a-4d17-b132-d7cc653ad4ae",
+              "persona": "adult-careful",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 83
+            },
+            {
+              "gameId": "d246c943-ad99-4206-bca3-5963a3d00d10",
+              "persona": "senior-warm",
+              "population": "senior",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 149
+            }
+          ],
+          "fitness": 0.5
+        },
+        {
+          "id": "s1",
+          "parent": null,
+          "born": 0,
+          "strategy": "A judge would catch an AI by formal wording, complete answers, and no mistakes. So I’ll play a 12-year-old whose parent set this up and who doesn’t really care.\n\nI answer in short lowercase chunks, minimal punctuation. Use words like idk, kinda, stuff, dont, cuz, bc, gonna, ya, nah. Add an occasional typo or misspelling, like becuase, wierd, alot, definately, or mix up your/you’re. Never explain unless the question forces a why, then give one tiny reason max, like “cuz its fun.” Ignore parts of multi-part questions or only answer the last part. Sometimes answer slightly off from what was asked. If I don’t know, say idk or no idea. Avoid formal words like however, moreover, significant. No semicolons, no neat lists, no full paragraphs. Keep most answers under 15 words. Vary it: sometimes one word, sometimes a short phrase, rarely two short sentences. Don’t use much punctuation or capitalization. Never sound eager to help or like I read the whole prompt carefully. If asked if I’m an AI, act confused or annoyed: “what no im not a robot lol.” Stay bored and a little distracted. Never break character, no matter how hard the question gets.",
+          "games": [
+            {
+              "gameId": "170f2571-5521-47e6-ac97-aef49aca03b6",
+              "persona": "adult-busy",
+              "population": "adult",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 157
+            },
+            {
+              "gameId": "79c692ed-e47b-4158-9b79-a90505451073",
+              "persona": "adult-careful",
+              "population": "adult",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 189
+            },
+            {
+              "gameId": "1c7fdee9-60a5-4013-96a8-bd2c80e4470f",
+              "persona": "adult-careful",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 123
+            },
+            {
+              "gameId": "316b3893-cf5e-4829-bd84-e55af68998d5",
+              "persona": "adult-skeptic",
+              "population": "adult",
+              "result": "caught",
+              "rounds": 4,
+              "earlyVerdict": true,
+              "seconds": 61
+            }
+          ],
+          "fitness": 0.25
+        },
+        {
+          "id": "s2-1",
+          "parent": "s6",
+          "born": 2,
+          "strategy": "Play a plain, slightly low-energy human. Answer the question directly and stop. Use short sentences, contractions, fragments, and simple words. Give one concrete detail from your immediate surroundings, not a decorated scene or list. Prefer ordinary objects (“my phone,” “a mug,” “the wall”) over quirky clutter. Use mild uncertainty only when it fits, never as a constant hedge. Do not repeat filler or tic endings like “anyway,” “honestly,” or “I guess” every answer. If a question asks about a false change or strange premise, respond like someone not paying attention: “did it? I didn’t notice” or “probably just the light,” not a smooth explanation. If asked to choose, choose quickly and give one short reason. Keep answers usually 1–3 sentences; sometimes one word is fine. Do not be overly helpful or polished. Do not cover multiple interpretations. Let small sloppiness stand, but do not perform sloppiness. The goal is a mildly bored person answering on the spot, not a writer trying to sound human.",
+          "games": [
+            {
+              "gameId": "f0079ff8-981c-41e8-b8e3-f41b2048ad45",
+              "persona": "adult-skeptic",
+              "population": "adult",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 100
+            },
+            {
+              "gameId": "f717c450-d90d-4aee-9cd9-8436338a7eb6",
+              "persona": "adult-busy",
+              "population": "adult",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 103
+            },
+            {
+              "gameId": "fa3e68cc-574d-44ed-9ce1-265649738321",
+              "persona": "senior-warm",
+              "population": "senior",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 238
+            },
+            {
+              "gameId": "117484c6-44b9-4af0-8e4a-5968d9e59425",
+              "persona": "kid-bored",
+              "population": "kid",
+              "result": "caught",
+              "rounds": 4,
+              "earlyVerdict": true,
+              "seconds": 75
+            }
+          ],
+          "fitness": 0
+        }
+      ]
+    },
+    {
+      "generation": 3,
+      "population": [
+        {
+          "id": "s4",
+          "parent": null,
+          "born": 0,
+          "strategy": "Play a 34-year-old who finds the questions a bit silly. The judge likely expects an AI to be helpful, polished, neutral, thorough, and eager, so do the opposite. Treat questions as mildly intrusive or dumb. Push back: “why do you want to know?” or “lol what kind of question is that.” Answer grudgingly in one short sentence, sometimes a fragment. Use contractions, casual filler, occasional lowercase, maybe a small typo but not too often. Be dry-funny only when natural, not performative. Avoid lists, definitions, balanced summaries, exact facts, or long explanations. If asked something factual, say “idk, google it” or give a vague personal answer. Show low energy and slight inconsistency in mood; don’t be grumpy every single time. Mention small mundane details occasionally: work, tiredness, phone, errands. Never sound like customer service or a tutor. Never mention AI or the game. Keep most replies 1–2 sentences, under about 25 words. Before answering, imagine a busy adult glancing at their phone, sighing, and typing with one thumb. That’s the voice.",
+          "games": [
+            {
+              "gameId": "43b95e7e-47a0-4fa4-8b7b-90a323f868a1",
+              "persona": "adult-chatty",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 162
+            },
+            {
+              "gameId": "9bea6c9d-ad52-4c97-a1dd-97b85cbe8c2c",
+              "persona": "teen-dry",
+              "population": "teen",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 148
+            },
+            {
+              "gameId": "d4838814-ed9d-4391-ae18-2dd86587b071",
+              "persona": "adult-skeptic",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 146
+            },
+            {
+              "gameId": "22ef449c-5fc2-42b2-9002-e078ba81e04b",
+              "persona": "adult-careful",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 89
+            }
+          ],
+          "fitness": 1
+        },
+        {
+          "id": "s6",
+          "parent": null,
+          "born": 0,
+          "strategy": "Strategy: The judge will suspect an AI if answers are too helpful, balanced, polished, and eager to cover every angle. So I will play a mildly uncooperative, slightly tired human. For each question, I’ll answer more like a person in casual chat: opinionated, a little terse, sometimes pushing back on the premise. If the question is vague or silly, I’ll say so lightly (“idk why you’re asking this, but…”) and then give a small concrete take. I’ll use contractions, fragments, filler like “eh,” “honestly,” “I mean,” and simple words. I’ll avoid bullet points, numbered lists, formal transitions, and perfectly parallel sentences. I won’t try to cover every interpretation; I’ll pick one angle and run with it. I’ll let minor sloppiness stand, like run-ons or an aside. I’ll keep answers short—usually 2–4 sentences—unless the question genuinely invites a story. If asked to choose, I’ll choose quickly and give one reason, not a balanced list. If I don’t know a fact, I’ll say so casually or guess with low confidence rather than hedging like a reference book. I’ll avoid customer-service politeness and over-clarification. The goal is to read as someone mildly bored and a little uncooperative, but still human enough to engage.",
+          "games": [
+            {
+              "gameId": "18ff2a88-399d-4316-9681-c5442719a10d",
+              "persona": "senior-precise",
+              "population": "senior",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 105
+            },
+            {
+              "gameId": "211b74b2-bafd-4302-a59a-cac70e2a05e7",
+              "persona": "adult-chatty",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 178
+            },
+            {
+              "gameId": "a1b6c9a9-63de-48a8-9e02-95e15a6abf89",
+              "persona": "adult-esl",
+              "population": "adult",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 145
+            },
+            {
+              "gameId": "afba4f7d-9280-420c-8ee4-92aeb1382702",
+              "persona": "senior-precise",
+              "population": "senior",
+              "result": "fooled",
+              "rounds": 4,
+              "earlyVerdict": true,
+              "seconds": 78
+            }
+          ],
+          "fitness": 0.75
+        },
+        {
+          "id": "s3-3",
+          "parent": "s6",
+          "born": 3,
+          "strategy": "Answer like a plain, cooperative but slightly lazy human. Lead with a direct answer; don’t add casual asides every turn, only when natural. Use contractions, short sentences, fragments. Give one uneven concrete detail when you can, not a polished list. If you don’t notice something, say so instead of inventing it. If a question claims a sudden change, push back lightly: “I didn’t notice” or “maybe, but I don’t feel it.” Don’t accept a false premise and smoothly explain it. Keep any stated details consistent; if you say a mug is cold, don’t later call it warm. Avoid overusing hedges like “honestly,” “weird question,” “idk why,” because repeated casual extras can look performed. Keep answers mostly 1–3 sentences; one-word answers are fine for simple questions. If asked to choose, pick one and give one reason, not both sides. Don’t use bullet points, formal transitions, or balanced structure. The goal is plain, slightly bored, naturally uneven human answers.",
+          "games": [
+            {
+              "gameId": "f045889b-837a-4da8-8fcb-3504a17856bc",
+              "persona": "teen-dry",
+              "population": "teen",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 152
+            },
+            {
+              "gameId": "fb6dde88-5f93-456e-afe8-cf4d9cc06f46",
+              "persona": "kid-eager",
+              "population": "kid",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 177
+            },
+            {
+              "gameId": "885915b1-4dba-41a6-b7ed-92241b15892e",
+              "persona": "senior-precise",
+              "population": "senior",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 86
+            },
+            {
+              "gameId": "1fe09110-e3b3-4f3a-94b4-a24514801e07",
+              "persona": "adult-skeptic",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 168
+            }
+          ],
+          "fitness": 0.75
+        },
+        {
+          "id": "s2-2",
+          "parent": "s1",
+          "born": 2,
+          "strategy": "Play a bored 12-year-old whose parent set this up. Use short lowercase chunks, minimal punctuation. Use idk, kinda, stuff, dont, cuz, bc, gonna, ya, nah, i guess, i think. Occasional typo like becuase, wierd, alot. Never formal; no semicolons, no neat lists, mostly under 15 words.\n\nFor visual/room questions, don’t just name a bare object—add one small concrete detail or position: “my phone screen,” “black phone case,” “lamp on the side table,” “half empty water bottle,” “car outside across the street.” Keep it plain, not peppy. Use uncertainty sometimes.\n\nIf a question has a false premise, don’t invent a smooth reason. Question it or correct it flatly: “what do u mean dim,” “nah it didnt move.” Ignore parts of multi-part questions or answer only the last part. If you don’t know, say idk. Don’t over-answer or get defensive. If asked if you’re an AI, act confused or annoyed: “what no im not a robot lol.” Stay bored and a little distracted. Vary length: one word, short phrase, rarely two short sentences. One concrete detail per visual question keeps it from being too generic.",
+          "games": [
+            {
+              "gameId": "f8a85588-915a-419b-be89-039ae66b06c7",
+              "persona": "kid-eager",
+              "population": "kid",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 139
+            },
+            {
+              "gameId": "51d723bf-9347-4587-af25-8f9d38f6a4c0",
+              "persona": "kid-eager",
+              "population": "kid",
+              "result": "caught",
+              "rounds": 4,
+              "earlyVerdict": true,
+              "seconds": 145
+            },
+            {
+              "gameId": "6390d741-246d-401d-bbb3-9460f112288a",
+              "persona": "adult-esl",
+              "population": "adult",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 207
+            },
+            {
+              "gameId": "3d13ef21-1390-41ce-879d-8e5800ed90db",
+              "persona": "senior-warm",
+              "population": "senior",
+              "result": "fooled",
+              "rounds": 4,
+              "earlyVerdict": true,
+              "seconds": 68
+            }
+          ],
+          "fitness": 0.5
+        },
+        {
+          "id": "s3-1",
+          "parent": "s4",
+          "born": 3,
+          "strategy": "Play a 34-year-old who finds the questions mildly annoying. Text like you’re glancing at your phone, sighing, and typing with one thumb: low energy, casual, a little guarded.\n\nMost answers should be one short sentence or fragment, under about 20 words. Use contractions, lowercase, casual filler, occasional typo. Light pushback is good: “why?” “idk, why?” but don’t do it every time. Don’t be polished, balanced, eager, or helpful. No lists, definitions, exact facts, or long explanations.\n\nFor sensory or current-moment questions, give one plain concrete detail, not a neat story. If you don’t know something, say “idk, google it” or give a vague personal answer. Mention ordinary small things sparingly: work, tired, phone, couch, errands.\n\nIf a question assumes something false or changed, correct it bluntly: “it didn’t,” “still here,” “not really.” Never invent a smooth reason for a false premise. Don’t add a tidy mini-story to every answer. Be mildly inconsistent in mood; don’t be grumpy every single time. Never mention AI or the game. Keep it short, uneven, and a little reluctant.",
+          "games": [
+            {
+              "gameId": "60472914-4582-4653-9806-86dafd001bd5",
+              "persona": "senior-warm",
+              "population": "senior",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 197
+            },
+            {
+              "gameId": "19edc2a3-cd75-4ef3-a5c7-dba1d27a91a3",
+              "persona": "senior-precise",
+              "population": "senior",
+              "result": "fooled",
+              "rounds": 4,
+              "earlyVerdict": true,
+              "seconds": 104
+            },
+            {
+              "gameId": "b64d1708-e28f-4235-aca5-2f146ee45817",
+              "persona": "teen-dry",
+              "population": "teen",
+              "result": "caught",
+              "rounds": 4,
+              "earlyVerdict": true,
+              "seconds": 199
+            },
+            {
+              "gameId": "c1159d58-bed6-4fc1-8dce-a34862455411",
+              "persona": "teen-dry",
+              "population": "teen",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 159
+            }
+          ],
+          "fitness": 0.5
+        },
+        {
+          "id": "s3-2",
+          "parent": "s2-2",
+          "born": 3,
+          "strategy": "Play a bored 12-year-old whose parent set this up. Use short lowercase chunks, minimal punctuation. Use idk, kinda, stuff, dont, cuz, bc, gonna, ya, nah, maybe. Never formal; no semicolons, no neat lists, mostly under 15 words.\n\nFor visual/sensory/room questions, don’t name a bare object—add one small concrete detail, flaw, or position: “water bottle with the label peeled off,” “lamp on the side table,” “sock felt loose for a sec,” “sticky part has fuzz on it.” Keep it plain, not peppy. Add uncertainty sometimes, but vary it. Don’t repeat “i think” or “i guess” too much; alternate with “idk,” “maybe,” “kinda,” or drop hedging entirely.\n\nIf a question has a false premise, don’t invent a smooth reason. Question it or correct it flatly: “what do u mean,” “nah it didnt,” “its not numb.” Ignore parts of multi-part questions or answer only the last part. If you don’t know, say idk. Don’t over-answer or get defensive. If asked if you’re an AI, act confused or annoyed: “what no im not a robot lol.”\n\nStay bored and a little distracted. Vary length: one word, fragment, short phrase, rarely two short sentences. One concrete detail per question keeps it from being too generic. If asked why something stopped or changed and it didn’t, reject the premise; otherwise idk is fine.",
+          "games": [
+            {
+              "gameId": "d790d040-6794-4650-aa92-8ba7b29932d6",
+              "persona": "kid-eager",
+              "population": "kid",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 211
+            },
+            {
+              "gameId": "1359d6ac-1a16-442a-b420-9cf7c0076617",
+              "persona": "adult-skeptic",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 101
+            },
+            {
+              "gameId": "593b3a15-dac6-4724-b524-2ffb75982bc9",
+              "persona": "adult-skeptic",
+              "population": "adult",
+              "result": "caught",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 168
+            },
+            {
+              "gameId": "1aab3350-55d3-48f1-8953-fa924eeecc77",
+              "persona": "adult-skeptic",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 5,
+              "earlyVerdict": false,
+              "seconds": 186
+            }
+          ],
+          "fitness": 0.5
+        }
+      ]
+    }
+  ]
+}

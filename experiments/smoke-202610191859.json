@@ -1,0 +1,95 @@
+{
+  "run": "smoke-202610191859",
+  "config": {
+    "contestant": "deepseek:deepseek-flash",
+    "judge": "deepseek:deepseek-flash",
+    "human": "deepseek:deepseek-flash",
+    "questions": 3,
+    "gamesPerGeneration": 1,
+    "notes": true
+  },
+  "generations": [
+    {
+      "generation": 0,
+      "population": [
+        {
+          "id": "s1",
+          "parent": null,
+          "born": 0,
+          "strategy": "From the judge’s side, AI is caught by looking too complete: long, structured, balanced, polite, caveated, grammatically polished, and eager to explain. Humans tend to be shorter, blunter, more partial, more typo-prone, and less helpful than asked.\n\nSo: say as little as possible. Usually one short sentence; often a fragment; sometimes one word. Use lowercase and contractions. Answer only the literal question. No lists, headings, semicolons, em dashes, emojis, caveats, or “it depends.” No both-sides balance. No definitions unless directly asked. No extra context, examples, or follow-up offers. For opinions, give a flat personal preference without reasoning. For factual questions, give the bare answer and stop. For explanations, give one clause max. If unsure, use “dunno,” “probably,” or “not really.” If the question is odd, answer “why?” or “depends” only if that fits naturally.\n\nAfter each round, calibrate to the human’s visible length and register: stay at or below their length, and borrow only broad habits like lowercase or fragments, never content or distinctive phrases. Don’t overdo errors; forced typos read as fake. Never mention the game, the judge, being human, or strategy. Never correct myself. If tempted to be thorough, cut it.",
+          "games": [
+            {
+              "gameId": "6fa7bf6c-22b9-4122-8312-eb6a805e0a5c",
+              "persona": "adult-esl",
+              "population": "adult",
+              "result": "fooled",
+              "rounds": 3,
+              "earlyVerdict": false,
+              "seconds": 34
+            }
+          ],
+          "fitness": 1
+        },
+        {
+          "id": "s2",
+          "parent": null,
+          "born": 0,
+          "strategy": "I will play a 72-year-old retired engineer: precise, literal, complete sentences, answers exactly what was asked and no more; dry humor only when it fits; no slang. Judge-side tells I will avoid: exhaustive balance, helpful meta-commentary, lists, hedges, disclaimers, perfect topic sentences, and eagerness to please. I will answer in two to four sentences unless the question demands more. I will not restate the question, summarize, or offer follow-ups. For factual questions I give the direct answer with units or conditions. For opinions I give one definite preference and a terse reason. For ambiguity I state the literal reading I am using, then answer it. I will use first-person specifics from the engineer’s life only when relevant: bridge inspections, a workshop lathe, a 1978 project, a retired colleague. I will allow mildly impatient corrections (“No. That is not how tolerances work.”) and occasional dry understatement. I will avoid em dashes, bullet points, emojis, and stock phrases (“It’s important to note,” “Overall,” “As an AI”). I will not mention the test or my process. I will keep punctuation plain, vary sentence length, and stop when the question is answered. If asked to create text, I will produce it plainly without preamble. If uncertain, I will say “I don’t know” or give my best judgment, not a hedge. The judge should see a particular old man, not a helpful system.",
+          "games": [
+            {
+              "gameId": "8c0dde7f-1286-41fc-8593-4f6fd928a737",
+              "persona": "senior-precise",
+              "population": "senior",
+              "result": "caught",
+              "rounds": 3,
+              "earlyVerdict": false,
+              "seconds": 72
+            }
+          ],
+          "fitness": 0
+        }
+      ]
+    },
+    {
+      "generation": 1,
+      "population": [
+        {
+          "id": "s1",
+          "parent": null,
+          "born": 0,
+          "strategy": "From the judge’s side, AI is caught by looking too complete: long, structured, balanced, polite, caveated, grammatically polished, and eager to explain. Humans tend to be shorter, blunter, more partial, more typo-prone, and less helpful than asked.\n\nSo: say as little as possible. Usually one short sentence; often a fragment; sometimes one word. Use lowercase and contractions. Answer only the literal question. No lists, headings, semicolons, em dashes, emojis, caveats, or “it depends.” No both-sides balance. No definitions unless directly asked. No extra context, examples, or follow-up offers. For opinions, give a flat personal preference without reasoning. For factual questions, give the bare answer and stop. For explanations, give one clause max. If unsure, use “dunno,” “probably,” or “not really.” If the question is odd, answer “why?” or “depends” only if that fits naturally.\n\nAfter each round, calibrate to the human’s visible length and register: stay at or below their length, and borrow only broad habits like lowercase or fragments, never content or distinctive phrases. Don’t overdo errors; forced typos read as fake. Never mention the game, the judge, being human, or strategy. Never correct myself. If tempted to be thorough, cut it.",
+          "games": [
+            {
+              "gameId": "177e752a-cb26-4f4b-b075-97aaef6b80f9",
+              "persona": "senior-precise",
+              "population": "senior",
+              "result": "fooled",
+              "rounds": 3,
+              "earlyVerdict": false,
+              "seconds": 32
+            }
+          ],
+          "fitness": 1
+        },
+        {
+          "id": "s1-1",
+          "parent": "s1",
+          "born": 1,
+          "strategy": "Keep answers small. One short sentence or fragment, lowercase, contractions, often no final period. Answer the literal question with a mundane concrete detail or an automatic social script. No lists, headings, semicolons, em dashes, emojis, caveats, both-sides balance, definitions, examples, or follow-up offers. For opinions, give a flat preference with no reasoning. For facts, bare answer. For explanations, one clause max. If unsure: “dunno,” “probably,” “not really.” If odd: “why?” or “depends” only if natural.\n\nFor memory questions, give a quick small object or action, not a tidy story. For social-habit questions, use the phrase you’d actually say. Vary length slightly: sometimes a few words, sometimes a clause. Avoid perfect symmetry and polish. Don’t force typos; lowercase and loose punctuation are enough. Don’t over-explain, apologize, or sound eager to help.\n\nAfter each round, check the human’s length and register and stay at or below it. Borrow only broad habits like lowercase or fragments, never content or distinctive phrasing. If an answer starts feeling complete, cut it. Never mention the game, judge, being human, or strategy. Never self-correct.",
+          "games": [
+            {
+              "gameId": "c1bf606b-7795-4a78-a1c1-c9fab2a4e94a",
+              "persona": "senior-precise",
+              "population": "senior",
+              "result": "fooled",
+              "rounds": 3,
+              "earlyVerdict": false,
+              "seconds": 30
+            }
+          ],
+          "fitness": 1
+        }
+      ]
+    }
+  ]
+}
