@@ -1,6 +1,6 @@
 # Reverse Turing Test
 
-Turing's test asked whether a machine could convince a human judge that it was human. Seventy-five years on, with the world filling up with machine-generated text trained on everything people have ever written, the question runs the other way: how would *you* convince anyone that you are human?
+Turing's test asked whether a machine could convince a human judge that it was human. It has been passed. There was no single moment and no announcement, but somewhere in the last few years we went past the point where it was in doubt: language models trained on nearly everything people have written hold conversations that judges cannot reliably tell from a human one, and in controlled versions of Turing's game they are picked as the human more often than the actual person. With the world filling up with text produced that way, the question runs the other way: how would *you* convince anyone that you are human?
 
 This is that test, run in reverse, as a live multiplayer game. A judge questions two contestants — one human, one AI — and has to decide which is which from the words alone. The person is the one who has to pass. It is also a research platform for studying what people fall back on when their humanity is in doubt, how language models imitate them, and how judges, human or machine, tell the difference.
 

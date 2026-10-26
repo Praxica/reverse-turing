@@ -37,8 +37,8 @@ export default async function HomePage() {
             Could you convince anyone that you&rsquo;re human?
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            Turing asked whether a machine could pass as a person. Now that
-            machines write like us, the test runs the other way. A judge
+            Machines passed Turing&rsquo;s test some time ago, without anyone
+            marking the day. Now the test runs the other way. A judge
             questions two hidden participants and has to tell the person from
             the machine — from the words alone.
           </p>
